@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cont{
+	min-width: 1110px;
+    width: 100%;
+    height: 95vh;
+    background: linear-gradient(rgba(4, 13, 32, 0.8), rgba(221, 236, 255, 0.8)),
+    url(factory1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+	background-attachment: fixed; 
+	margin: 0;
+}
+
+#cont2{
+	min-width: 1110px;
+	width: 100%;
+	height: 300px;
+	background-image: linear-gradient(rgba(4, 13, 32, 0.3), rgba(221, 236, 255, 0.3)),url(factory2.jpg);
+	background-size: cover;
+/*    background: linear-gradient(rgba(4, 13, 32, 0.8), rgba(221, 236, 255, 0.8))*/
+/*    ,url(factory2.jpg);*/
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+ul, li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+div h1 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.hg1 a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+#namep a:hover{
+    text-decoration: none;
+    color: rgb(199, 211, 224);
+}
+
+/* 헤더 로고부 */
+div #namep{
+	
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    margin: 20px;
+    text-align: left;
+    float: left;
+}
+#menuall{
+    float: right;
+	text-align: center;
+    display: table-row-group;
+    padding: 35px;
+}
+
+/*1차메뉴*/
+.dr1{
+    font-size: 0;
+    position: relative;
+}
+
+.dr1 li{
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+.dr1 > li > a{
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.dr1 > li:hover{
+    color: rgb(4, 13, 32);
+    background-color:  rgba(221, 236, 255, 0.5);
+    transition: 1s;
+}
+/* 2차메뉴 */
+.dr2{
+    /* display: none;
+    position: absolute; */
+    width: 100px;
+    background: rgba(46, 48, 49, 0.5);
+}
+
+
+.dr2 a{
+    display: block;
+    padding: 10px 0;
+    
+    border-radius: 3px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.dr1 .dr2{
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease-in-out;
+/*    transform: translateY(-20px);*/
+    text-align: center;
+}
+
+.dr1 > li:hover > .dr2{
+    display: block;
+    border-radius: 3px;
+	text-align: center;
+    visibility: visible;
+    opacity: 1;
+/*    transform: translateY(0);*/
+
+}
+
+
+.dr2 a:hover{
+    background-color: rgba(221, 236, 255, 0.5);
+    color: black;
+}
+
+ .hg1{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    transform: translate(-40%,-40%);
+    color: white;
+    text-align: center;
+/*    font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+}
+
+ .hg1 h2{
+    font-size: 5vh;
+    margin-bottom: 20px;
+}
+
+ .hg1 p{
+    font-size: 19px;
+}
+
+#button1{
+    background: none;
+    border: 2px solid rgb(4, 13, 32);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+#button1:hover{
+    background-color: rgba(4, 13, 32, 0.8);
+}
+
+div #button2{
+    background: none;
+    border: 2px solid rgb(4, 13, 32);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 35px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+#button2:hover{
+    background-color: rgba(4, 13, 32, 0.8);
+}
+
+div #button3{
+    background: none;
+    border: 2px solid rgb(4, 13, 32);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+#button3:hover{
+    background-color: rgba(4, 13, 32, 0.8);
+}
+
+div .button4{
+	
+    background-color: rgb(4, 13, 32);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+    margin: 5px;
+}
+
+.button4:hover{
+    background-color: rgb(56, 56, 69);
+}
+
+div .button5{
+    background-color: rgb(107, 1, 4);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+    margin: 5px;
+}
+
+div > .button5:hover{
+    background-color: rgb(44, 33, 37);
+}
+
+
+div > #searchmain{
+	margin-left: 100px;
+	padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.foottt {
+	font-size: 20px;
+    background-color: #293A4B;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+}
+
+
